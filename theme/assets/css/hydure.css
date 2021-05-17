@@ -2,6 +2,23 @@
 
 @media (prefers-color-scheme: dark) { :root { --body-color:       var(--oc-gray-4); --body-color-light: var(--oc-gray-6); --body-bg:          var(--oc-gray-9); --link-color:       var(--oc-blue-5); --heading-color:    var(--oc-white); --message-color: var(--oc-gray-9); --message-bg:    var(--oc-yellow-4); --border-color:  var(--oc-gray-7); --code-bg:       var(--oc-gray-8); --box-shadow: 3px 3px 3px var(--oc-gray-7); } }
 
+/*  568px */
+/*  768px */
+/* 1024px */
+/* 1280px */
+/* 1440px */
+@media screen and (max-width: 35.438em) { .pure-hidden-xs { display: none !important; } .pure-visible-sm { display: none !important; } .pure-visible-md { display: none !important; } .pure-visible-lg { display: none !important; } .pure-visible-xl { display: none !important; } }
+
+@media screen and (min-width: 35.5em) and (max-width: 47.938em) { .pure-visible-xs { display: none !important; } .pure-visible-md { display: none !important; } .pure-visible-lg { display: none !important; } .pure-visible-xl { display: none !important; } .pure-hidden-sm { display: none !important; } }
+
+@media screen and (min-width: 48em) and (max-width: 63.938em) { .pure-visible-xs { display: none !important; } .pure-visible-sm { display: none !important; } .pure-visible-lg { display: none !important; } .pure-visible-xl { display: none !important; } .pure-hidden-md { display: none !important; } }
+
+@media screen and (min-width: 64em) and (max-width: 79.938em) { .pure-visible-xs { display: none !important; } .pure-visible-sm { display: none !important; } .pure-visible-md { display: none !important; } .pure-visible-xl { display: none !important; } .pure-hidden-lg { display: none !important; } }
+
+@media screen and (min-width: 80em) and (max-width: 89.938em) { .pure-visible-xs { display: none !important; } .pure-visible-sm { display: none !important; } .pure-visible-md { display: none !important; } .pure-visible-lg { display: none !important; } .pure-hidden-xl { display: none !important; } }
+
+@media screen and (min-width: 90em) { .pure-visible-xs { display: none !important; } .pure-visible-sm { display: none !important; } .pure-visible-md { display: none !important; } .pure-visible-lg { display: none !important; } .pure-visible-xl { display: none !important; } .pure-hidden-ret { display: none !important; } }
+
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 body { font-size: var(--body-font-size); line-height: var(--body-line-height); color: var(--body-color); background-color: var(--body-bg); }
@@ -56,7 +73,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 
 .sidebar { color: var(--sidebar-color); }
 
-.header { width: 100%; font-family: var(--body-font); text-align: center; padding: 2em; line-height: .9; }
+.header { width: 100%; font-family: var(--body-font); text-align: left; padding: 2em; line-height: .9; }
 
 .header a { color: var(--oc-indigo-9); }
 
@@ -78,7 +95,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 
 @media (min-width: 48rem) { .header { font-size: 80%; text-align: left; position: absolute; bottom: 0; } .nav-item a { padding-left: 0; } .social-item a { padding-left: 0; } }
 
-@media (min-width: 64rem) { .header { font-size: 100%; } }
+@media (min-width: 64rem) { .header { font-size: 100%; text-align: left; } }
 
 .content { padding: 4em 1em; }
 
@@ -292,6 +309,39 @@ figcaption.align-center { text-align: center; }
 .highlight .w { color: #bbbbbb; }
 
 .highlight { background-color: #f8f8f8; }
+
+/* Made by Erik Terwan 24th of November 2015 MIT License If you are thinking of using this in production code, beware of the browser prefixes. */
+#menuToggle { display: block; position: relative; top: 0px; right: 0px; z-index: 1; -webkit-user-select: none; user-select: none; }
+
+#menuToggle a { text-decoration: none; color: #232323; transition: color 0.3s ease; }
+
+#menuToggle a:hover { color: var(--oc-indigo-5); }
+
+#menuToggle input { display: block; width: 40px; height: 32px; position: absolute; top: -7px; left: -5px; cursor: pointer; opacity: 0; /* hide this */ z-index: 2; /* and place it over the hamburger */ -webkit-touch-callout: none; }
+
+/* Just a quick hamburger */
+#menuToggle span { display: block; width: 33px; height: 4px; margin-bottom: 5px; position: relative; background: #cdcdcd; border-radius: 3px; z-index: 1; transform-origin: 4px 0px; transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+
+#menuToggle span:first-child { transform-origin: 0% 0%; }
+
+#menuToggle span:nth-last-child(2) { transform-origin: 0% 100%; }
+
+/*  Transform all the slices of hamburger into a crossmark. */
+#menuToggle input:checked ~ span { opacity: 1; transform: rotate(45deg) translate(-2px, -1px); background: #232323; }
+
+/* But let's hide the middle one. */
+#menuToggle input:checked ~ span:nth-last-child(3) { opacity: 0; transform: rotate(0deg) scale(0.2, 0.2); }
+
+/* Ohyeah and the last one should go the other direction */
+#menuToggle input:checked ~ span:nth-last-child(2) { transform: rotate(-45deg) translate(0, -1px); }
+
+/* Make this absolute positioned at the top left of the screen */
+#menu { position: absolute; width: 300px; margin: -100px 0 0 -50px; padding: 10px; padding-top: 125px; background: #ededed; list-style-type: none; -webkit-font-smoothing: antialiased; /* to stop flickering of text in safari */ transform-origin: 0% 0%; transform: translate(-120%, 0); transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+
+#menu li { padding: 10px 0; font-size: 16px; }
+
+/* And let's slide it in from the left */
+#menuToggle input:checked ~ ul { transform: none; }
 
 @media (prefers-color-scheme: dark) { /** rougify style gruvbox */ .highlight table td { padding: 5px; } .highlight table pre { margin: 0; } .highlight, .highlight .w { color: #fbf1c7; background-color: #282828; } .highlight .err { color: #fb4934; background-color: #282828; font-weight: bold; } .highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs { color: #928374; font-style: italic; } .highlight .cp { color: #8ec07c; } .highlight .nt { color: #fb4934; } .highlight .o, .highlight .ow { color: #fbf1c7; } .highlight .p, .highlight .pi { color: #fbf1c7; } .highlight .gi { color: #b8bb26; background-color: #282828; } .highlight .gd { color: #fb4934; background-color: #282828; } .highlight .gh { color: #b8bb26; font-weight: bold; } .highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv { color: #fb4934; } .highlight .kc { color: #d3869b; } .highlight .kt { color: #fabd2f; } .highlight .kd { color: #fe8019; } .highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 { color: #b8bb26; font-style: italic; } .highlight .si { color: #b8bb26; font-style: italic; } .highlight .sr { color: #b8bb26; font-style: italic; } .highlight .sa { color: #fb4934; } .highlight .se { color: #fe8019; } .highlight .nn { color: #8ec07c; } .highlight .nc { color: #8ec07c; } .highlight .no { color: #d3869b; } .highlight .na { color: #b8bb26; } .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx { color: #d3869b; } .highlight .ss { color: #83a598; } }
 
