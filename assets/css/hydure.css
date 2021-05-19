@@ -1,4 +1,4 @@
-:root { --body-font-size: 16px; --body-line-height: 1.5; --body-color:       var(--oc-gray-9); --body-color-light: var(--oc-gray-6); --body-bg:          var(--oc-white); --link-color:       var(--oc-blue-8); --heading-color:    var(--oc-indigo-9); --body-font: -apple-system, BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; --brand-title-font: "Newsreader", serif; --page-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; --code-font: 'Courier New', Courier, monospace; --sidebar-color: var(--oc-gray-4); --message-color: var(--oc-white); --message-bg:    var(--oc-yellow-9); --border-radius: .5em; --border-color:  var(--oc-gray-3); --code-bg:       var(--oc-gray-1); --box-shadow: 3px 3px 3px var(--oc-gray-3); }
+:root { --body-font-size: 16px; --body-line-height: 1.5; --body-color:       var(--oc-gray-9); --body-color-light: var(--oc-gray-6); --body-bg:          var(--oc-white); --link-color:       var(--oc-blue-8); --heading-color:    var(--oc-indigo-9); --body-font: "ASAP Condensed", sans-serif; --brand-title-font: "ASAP Condensed", sans-serif; --page-font: Aleo, serif; --code-font: 'Courier New', Courier, monospace; --sidebar-color: var(--oc-gray-4); --message-color: var(--oc-white); --message-bg:    var(--oc-yellow-9); --border-radius: .5em; --border-color:  var(--oc-gray-3); --code-bg:       var(--oc-gray-1); --box-shadow: 3px 3px 3px var(--oc-gray-3); }
 
 @media (prefers-color-scheme: dark) { :root { --body-color:       var(--oc-gray-4); --body-color-light: var(--oc-gray-6); --body-bg:          var(--oc-gray-9); --link-color:       var(--oc-blue-5); --heading-color:    var(--oc-white); --message-color: var(--oc-gray-9); --message-bg:    var(--oc-yellow-4); --border-color:  var(--oc-gray-7); --code-bg:       var(--oc-gray-8); --box-shadow: 3px 3px 3px var(--oc-gray-7); } }
 
@@ -77,7 +77,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 
 .header a { color: var(--oc-indigo-9); }
 
-.brand-title { font-family: var(--brand-title-font); font-size: 1.25em; font-weight: bold; line-height: 1.2; letter-spacing: -1px; }
+.brand-title { font-family: var(--brand-title-font); font-size: 1.75em; font-weight: bold; line-height: 1.2; letter-spacing: -1px; }
 
 .brand-tagline { font-size: 1.25em; line-height: 1.2; letter-spacing: -1px; }
 
