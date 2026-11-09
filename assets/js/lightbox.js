@@ -98,10 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(is_imagelink(url) && !element.classList.contains('no-lightbox')) {
                 element.classList.add('lightbox-image');
                 var href = element.getAttribute('href');
-                var filename = href.split('/').pop();
-                var split = filename.split(".");
-                var name = split[0];
-                element.setAttribute('title',name);
+                element.setAttribute('title', element.getAttribute('data-caption') || '');
             }
         }
     });

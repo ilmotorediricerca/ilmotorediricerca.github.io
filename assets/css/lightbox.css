@@ -27,7 +27,7 @@
     1px 1px 0 #000;  
 }
 
-#lightbox span {display: none;}
+#lightbox span:empty {display: none;}
 
 #lightbox .videoWrapperContainer {
     position: relative; 

@@ -1,0 +1,263 @@
+# Didascalie delle foto. Per ogni foto: it, en (testo) e credit (autore della foto).
+# Campi vuoti: nessuna didascalia. Sotto la griglia compare una riga con gli autori delle foto (solo se tutte hanno un credito);
+# per scegliere tu il testo, aggiungi in fondo una sezione '_galleria:' con slug -> it/en. 'file', 'dir' e 'thumbdir' non vanno modificati.
+che-pesci-prendere:
+- file: 01-che_pesci_prendere.jpg
+  dir: che-pesci-prendere
+  thumbdir: che-pesci-prendere
+  it: Installazione e foto di gruppo
+  en: Installation and group photo
+  credit: Roberto dell’Orco
+- file: 02-che_pesci_prendere.jpg
+  dir: che-pesci-prendere
+  thumbdir: che-pesci-prendere
+  it: ''
+  en: ''
+  credit: Roberto dell’Orco
+- file: 03-che_pesci_prendere.jpg
+  dir: che-pesci-prendere
+  thumbdir: che-pesci-prendere
+  it: Installazione
+  en: Installation
+  credit: Roberto dell’Orco
+- file: 04-che_pesci_prendere.jpg
+  dir: che-pesci-prendere
+  thumbdir: che-pesci-prendere
+  it: ''
+  en: ''
+  credit: Roberto dell’Orco
+oda:
+- file: 01-oda.jpg
+  dir: oda
+  thumbdir: oda
+  it: Parte del Teatro Nazionale di Tirana (demolito)
+  en: Part of the National Theatre of Tirana (demolished)
+  credit: Roberto dell’Orco
+- file: 02-oda.jpg
+  dir: oda
+  thumbdir: oda
+  it: Realizzazione dell’installazione
+  en: Building the installation
+  credit: Roberto dell’Orco
+- file: 03-oda.jpg
+  dir: oda
+  thumbdir: oda
+  it: Installazione fotografica
+  en: Photographic installation
+  credit: Roberto dell’Orco
+- file: 04-oda.jpg
+  dir: oda
+  thumbdir: oda
+  it: Oda, installazione completa
+  en: Oda, the finished installation
+  credit: Roberto dell’Orco
+- file: 05-oda.jpg
+  dir: oda
+  thumbdir: oda
+  it: Oda, inaugurazione
+  en: Oda, the opening
+  credit: Roberto dell’Orco
+adelfia-fratelli:
+- file: 01-adelfia-fratelli.jpg
+  dir: adelfia
+  thumbdir: adelfia
+  it: Performance di Roberto dell’Orco
+  en: Performance by Roberto dell’Orco
+  credit: Marianna Quaranta
+- file: 02-adelfia-fratelli.jpg
+  dir: adelfia
+  thumbdir: adelfia
+  it: Performance di Sabina D’Angelosante
+  en: Performance by Sabina D’Angelosante
+  credit: Roberto dell’Orco
+- file: 03-adelfia-fratelli.jpg
+  dir: adelfia
+  thumbdir: adelfia
+  it: Installazione di Maurizio Papagni
+  en: Installation by Maurizio Papagni
+  credit: Roberto dell’Orco
+albania1e1000:
+- file: 01-albania1e1000.jpg
+  dir: albania1e1000
+  thumbdir: albania1e1000
+  it: Schema del progetto
+  en: Diagram of the project
+  credit: Abitare
+- file: 02-albania1e1000.jpg
+  dir: albania1e1000
+  thumbdir: albania1e1000
+  it: Giornata di workshop a Torino
+  en: Workshop day in Turin
+  credit: Roberto dell’Orco
+- file: 03-albania1e1000.jpg
+  dir: albania1e1000
+  thumbdir: albania1e1000
+  it: ''
+  en: ''
+  credit: Roberto dell’Orco
+- file: 04-albania1e1000.jpg
+  dir: albania1e1000
+  thumbdir: albania1e1000
+  it: Prototipo del n. 0 della rivista italo-albanese
+  en: Prototype of issue 0 of the Italian-Albanian magazine
+  credit: Roberto dell’Orco
+- file: 05-albania1e1000.jpg
+  dir: albania1e1000
+  thumbdir: albania1e1000
+  it: Presentazione della rivista in Albania
+  en: Presentation of the magazine in Albania
+  credit: Roberto dell’Orco
+- file: 06-albania1e1000.jpg
+  dir: albania1e1000
+  thumbdir: albania1e1000
+  it: Ilir Butka con il n. 0
+  en: Ilir Butka with issue 0
+  credit: Roberto dell’Orco
+- file: 07-albania1e1000.jpg
+  dir: albania1e1000
+  thumbdir: albania1e1000
+  it: ''
+  en: ''
+  credit: Roberto dell’Orco
+- file: 08-albania1e1000.jpg
+  dir: albania1e1000
+  thumbdir: albania1e1000
+  it: Bunker sulla spiaggia
+  en: Bunker on the beach
+  credit: Roberto dell’Orco
+otnarat:
+- file: 01-otnarat.jpg
+  dir: otnarat
+  thumbdir: otnarat
+  it: 'Grafica: copertina del DVD'
+  en: 'Graphics: DVD cover'
+  credit: Roberto dell’Orco
+- file: 02-otnarat.jpg
+  dir: otnarat
+  thumbdir: otnarat
+  it: Nicola Carrino nel suo studio
+  en: Nicola Carrino in his studio
+  credit: Roberto dell’Orco
+- file: 03-otnarat.jpg
+  dir: otnarat
+  thumbdir: otnarat
+  it: Stalker/ON sulla fontana di Carrino a Taranto
+  en: Stalker/ON on Carrino’s fountain in Taranto
+  credit: Roberto dell’Orco
+- file: 04-otnarat.jpg
+  dir: otnarat
+  thumbdir: otnarat
+  it: Scene di backstage
+  en: Backstage scenes
+  credit: Roberto dell’Orco
+- file: 05-otnarat.jpg
+  dir: otnarat
+  thumbdir: otnarat
+  it: Scene di backstage
+  en: Backstage scenes
+  credit: Roberto dell’Orco
+sogno-cirio:
+- file: 01-il_sogno_di_francesco_cirio.jpg
+  dir: sogno-cirio
+  thumbdir: sogno-cirio
+  it: Pomodoro inciso al laser
+  en: Laser-engraved tomato
+  credit: Roberto dell’Orco
+- file: 02-il_sogno_di_francesco_cirio.jpg
+  dir: sogno-cirio
+  thumbdir: sogno-cirio
+  it: Workshop al K-Hole, Torino
+  en: Workshop at K-Hole, Turin
+  credit: ''
+- file: 03-il_sogno_di_francesco_cirio.jpg
+  dir: sogno-cirio
+  thumbdir: sogno-cirio
+  it: Pomodori incisi al laser
+  en: Laser-engraved tomatoes
+  credit: Roberto dell’Orco
+- file: 04-il_sogno_di_francesco_cirio.jpg
+  dir: sogno-cirio
+  thumbdir: sogno-cirio
+  it: Ricerca bibliografica su Cirio
+  en: Bibliographic research on Cirio
+  credit: Roberto dell’Orco
+- file: 05-il_sogno_di_francesco_cirio.jpg
+  dir: sogno-cirio
+  thumbdir: sogno-cirio
+  it: Incisione laser
+  en: Laser engraving
+  credit: Roberto dell’Orco
+- file: 06-il_sogno_di_francesco_cirio.jpg
+  dir: sogno-cirio
+  thumbdir: sogno-cirio
+  it: Inaugurazione al K-Hole, Torino
+  en: Opening at K-Hole, Turin
+  credit: ''
+maerchen:
+- file: 01-maerchen_von_einem.jpg
+  dir: maerchen
+  thumbdir: maerchen
+  it: Ingresso del cimitero di San Matteo
+  en: Entrance of the Sankt Matthaeus cemetery
+  credit: Roberto dell’Orco
+- file: 02-maerchen_von_einem.jpg
+  dir: maerchen
+  thumbdir: maerchen
+  it: ''
+  en: ''
+  credit: Roberto dell’Orco
+- file: 03-maerchen_von_einem.jpg
+  dir: maerchen
+  thumbdir: maerchen
+  it: ''
+  en: ''
+  credit: Roberto dell’Orco
+- file: 04-maerchen_von_einem.jpg
+  dir: maerchen
+  thumbdir: maerchen
+  it: ''
+  en: ''
+  credit: Roberto dell’Orco
+- file: 05-maerchen_von_einem.jpg
+  dir: maerchen
+  thumbdir: maerchen
+  it: ''
+  en: ''
+  credit: Jacopo Gallico
+giardino-radicale:
+- file: 01-giardino_radicale.jpg
+  dir: giardino_radicale
+  thumbdir: giardino_radicale
+  it: La nuova sala del barbiere
+  en: The new barber’s room
+  credit: Yacine Benseddik
+- file: 02-giardino_radicale.jpg
+  dir: giardino_radicale
+  thumbdir: giardino_radicale
+  it: ''
+  en: ''
+  credit: Yacine Benseddik
+- file: 03-giardino_radicale.jpg
+  dir: giardino_radicale
+  thumbdir: giardino_radicale
+  it: La nuova sala del telefono
+  en: The new telephone room
+  credit: Yacine Benseddik
+- file: 04-giardino_radicale.jpg
+  dir: giardino_radicale
+  thumbdir: giardino_radicale
+  it: La realizzazione dei mobili
+  en: Building the furniture
+  credit: Yacine Benseddik
+- file: 05-giardino_radicale.jpg
+  dir: giardino_radicale
+  thumbdir: giardino_radicale
+  it: ''
+  en: ''
+  credit: Yacine Benseddik
+- file: 06-giardino_radicale.jpg
+  dir: giardino_radicale
+  thumbdir: giardino_radicale
+  it: Le giornate di pittura
+  en: The painting days
+  credit: Yacine Benseddik
