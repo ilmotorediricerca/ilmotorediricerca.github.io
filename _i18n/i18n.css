@@ -7,7 +7,7 @@
 .lead { font-size: 1.25em; line-height: 1.5; margin: 0 0 1.6em; }
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 1.6em 1.2em; margin: 0 0 2.2em; }
 .card { display: block; text-decoration: none; color: inherit; }
-.card-img { display: block; overflow: hidden; border-radius: 6px; aspect-ratio: 4 / 3; background: #eee; }
+.card-img { display: block; overflow: hidden; border-radius: 6px; aspect-ratio: 4 / 3; background: #e9e2d3; }
 .card-img img { width: 100%; height: 100%; object-fit: cover; margin: 0; border-radius: 0; transition: transform .5s ease; }
 .card:hover .card-img img, .card:focus-visible .card-img img { transform: scale(1.06); }
 .card-meta { display: block; margin: .6em 0 .1em; font-size: .75em; letter-spacing: .06em; text-transform: uppercase; opacity: .6; }
@@ -20,7 +20,7 @@
 
 /* griglia foto nelle pagine dei progetti */
 article.page .photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: .9em; margin: 2em 0 1.2em; }
-article.page .photo-grid a { display: block; overflow: hidden; border-radius: 6px; aspect-ratio: 4 / 3; background: #eee; }
+article.page .photo-grid a { display: block; overflow: hidden; border-radius: 6px; aspect-ratio: 4 / 3; background: #e9e2d3; }
 article.page .photo-grid img { width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; margin: 0; border-radius: 0; transition: transform .5s ease; }
 article.page .photo-grid a:hover img, article.page .photo-grid a:focus-visible img { transform: scale(1.06); }
 @media (max-width: 600px) { article.page .photo-grid { grid-template-columns: repeat(2, 1fr); gap: .6em; } }
@@ -30,3 +30,27 @@ article.page .photo-grid a:hover img, article.page .photo-grid a:focus-visible i
 .content.home-wide article.page > .page-title,
 .content.home-wide article.page > h2 { max-width: 42em; }
 .content.home-wide article.page > iframe { max-width: 100%; }
+
+/* Tema unico chiaro, sfondo beige leggero (ignora la modalita scura del sistema) */
+:root:root {
+  color-scheme: light;
+  --body-color: var(--oc-gray-9);
+  --body-color-light: var(--oc-gray-7);
+  --body-bg: #f7f2e8;
+  --link-color: var(--oc-blue-8);
+  --heading-color: var(--oc-indigo-9);
+  --message-color: var(--oc-white);
+  --message-bg: var(--oc-yellow-9);
+  --border-color: #ddd5c3;
+  --code-bg: #efe8d8;
+  --box-shadow: 3px 3px 3px #ddd5c3;
+  --mono: ui-monospace, "SFMono-Regular", "DejaVu Sans Mono", Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+  --body-font: var(--mono);
+  --brand-title-font: var(--mono);
+  --page-font: var(--mono);
+  --code-font: var(--mono);
+  --body-font-size: 15px;
+  --body-line-height: 1.55;
+}
+.lead, .card-title, .card h3, h1, h2, h3 { font-family: var(--mono); }
+.header .brand-title, .header a { letter-spacing: -.02em; }
