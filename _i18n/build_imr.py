@@ -101,8 +101,11 @@ def head_fixes(t, lang, slug, title, desc):
     t = t.replace('<a href="https://github.com/zivong/jekyll-theme-hydure" target="_blank">Hydure, developed by <a href="mailto: roorco@gmail.com">Roberto Dell\'Orco</a>',
                   '<a href="https://github.com/zivong/jekyll-theme-hydure" target="_blank">Hydure</a>, developed by <a href="mailto:roorco@gmail.com">Roberto dell’Orco</a>',1)
     t = t.replace("All right reserved.", "Tutti i diritti riservati." if lang=="it" else "All rights reserved.",1)
-    if lang=="en":
-        t = t.replace("Powered by","Powered by",1)
+    t, n2 = re.subn(r'&copy;&nbsp;<time datetime="[^"]*">2021</time>\.', '&copy;&nbsp;2008-2014 ilMotorediRicerca.', t, 1)
+    assert n2 == 1, "copyright non trovato"
+    # niente riga "Powered by ... developed by" nel piè di pagina
+    t, n_ = re.subn(r'\s*<div class="pure-u-1 pure-u-md-2-3">\s*<small>\s*Powered by[\s\S]*?</small>\s*</div>', '', t, 1)
+    assert n_ == 1, "riga Powered by non trovata"
     return t
 
 def page_parts(t):
