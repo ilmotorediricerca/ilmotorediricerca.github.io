@@ -46,7 +46,7 @@ FIX = {
  ("Volos-Milies, Grece,","Volos-Milies, Grecia,"),
  ("Gli artist in diversi ruoli","Gli artisti in diversi ruoli"),
 ],
-"albania1e1000":[("All’apperenza","All’apparenza")],
+"albania1e1000":[("All’apperenza","All’apparenza"),("sugli albanesi , luoghi","sugli albanesi, luoghi")],
 "otnarat":[
  ("in Gemania,","in Germania,") if False else ("Gemania","Germania"),
  ("moduli d’acciao","moduli d’acciaio"),
@@ -90,6 +90,7 @@ def head_fixes(t, lang, slug, title, desc):
     t = re.sub(r'<link rel="canonical" href="[^"]*" />', f'<link rel="canonical" href="{url}" />\n<link rel="alternate" hreflang="it" href="{alt_it}" />\n<link rel="alternate" hreflang="en" href="{alt_en}" />\n<link rel="alternate" hreflang="x-default" href="{alt_it}" />', t, 1)
     t = re.sub(r'<meta property="og:url" content="[^"]*" />', f'<meta property="og:url" content="{url}" />', t, 1)
     t = re.sub(r'"description":"[^"]*","url":"[^"]*"', f'"description":"{desc}","url":"{url}"', t, 1)
+    t = t.replace('<div class="content pure-u-1 pure-u-md-2-5">','<div class="content pure-u-1 pure-u-md-2-5 home-wide">',1)
     t = t.replace('<link rel="stylesheet" href="/assets/css/hydure.css">','<link rel="stylesheet" href="/assets/css/hydure.css">\n  <link rel="stylesheet" href="/assets/css/i18n.css">',1)
     # selettore di lingua + home del brand
     brand_old = '<a class="brand-title" href="/">ilMotorediRicerca</a>'
@@ -98,7 +99,7 @@ def head_fixes(t, lang, slug, title, desc):
     t = t.replace(brand_old, f'<a class="brand-title" href="{home}">ilMotorediRicerca</a>\n  {lang_block(lang,slug)}',1)
     # piè di pagina: tag <a> chiuso male, frase inglese sbagliata
     t = t.replace('<a href="https://github.com/zivong/jekyll-theme-hydure" target="_blank">Hydure, developed by <a href="mailto: roorco@gmail.com">Roberto Dell\'Orco</a>',
-                  '<a href="https://github.com/zivong/jekyll-theme-hydure" target="_blank">Hydure</a>, developed by <a href="mailto:roorco@gmail.com">Roberto Dell\'Orco</a>',1)
+                  '<a href="https://github.com/zivong/jekyll-theme-hydure" target="_blank">Hydure</a>, developed by <a href="mailto:roorco@gmail.com">Roberto dell’Orco</a>',1)
     t = t.replace("All right reserved.", "Tutti i diritti riservati." if lang=="it" else "All rights reserved.",1)
     if lang=="en":
         t = t.replace("Powered by","Powered by",1)
@@ -186,13 +187,13 @@ CARDS = [
 ]
 HOME_TXT = {
 "it": dict(
- lead='<strong>ilMotorediRicerca</strong> è un collettivo fondato nel 2008 da <a class="gold" target="_blank" href="http://www.nicoangiuli.com/"><strong>Nico Angiuli</strong></a>, <strong>Roberto Dell’Orco</strong>, <a class="gold" href="http://atelierquartino.com/" target="_blank"><strong>Matteo Fraterno</strong></a> e <strong>Michele Loiacono</strong>. Questo sito è un archivio dei progetti realizzati dal gruppo.',
- p1="Come un vero e proprio motore di ricerca fisico e non virtuale, il collettivo ha esplorato territori marginali della contemporaneità, rivelando nuove prospettive attraverso la reinterpretazione di memorie e immaginari collettivi.",
- p2="ilMotorediRicerca ha sviluppato i suoi progetti in una modalità collaborativa: le idee realizzate sono frutto di un processo dialogico tra le persone coinvolte. Ciascun progetto è specifico al sito dove viene realizzato e mescola la ricerca sul luogo al processo creativo di scambio e conoscenza. Formatosi come collettivo basato in Puglia, ha immaginato questa terra come una piattaforma protesa nel mare verso la Grecia e i Balcani."),
+ lead='<strong>ilMotorediRicerca</strong> è un collettivo fondato nel 2008 da <a class="gold" target="_blank" href="http://www.nicoangiuli.com/"><strong>Nico Angiuli</strong></a>, <strong>Roberto dell’Orco</strong>, <a class="gold" href="http://atelierquartino.com/" target="_blank"><strong>Matteo Fraterno</strong></a> e <strong>Michele Loiacono</strong>. Come un motore di ricerca, ma fisico e non virtuale, ha esplorato territori marginali della contemporaneità, reinterpretando memorie e immaginari collettivi.',
+ p1="Ogni progetto nasce in un luogo preciso e dal dialogo con le persone coinvolte: le idee realizzate sono il frutto di questo scambio. Il collettivo si è formato in Puglia e ha immaginato questa terra come una piattaforma protesa nel mare verso la Grecia e i Balcani.",
+ p2="Questo sito è l’archivio dei progetti realizzati dal gruppo, dal 2008 al 2014."),
 "en": dict(
- lead='<strong>ilMotorediRicerca</strong> is a collective founded in 2008 by <a class="gold" target="_blank" href="http://www.nicoangiuli.com/"><strong>Nico Angiuli</strong></a>, <strong>Roberto Dell’Orco</strong>, <a class="gold" href="http://atelierquartino.com/" target="_blank"><strong>Matteo Fraterno</strong></a> and <strong>Michele Loiacono</strong>. This site is an archive of the projects carried out by the group.',
- p1="Like a real search engine, physical and not virtual, the collective has explored marginal territories of the contemporary, revealing new perspectives through the reinterpretation of collective memories and imaginaries.",
- p2="ilMotorediRicerca developed its projects in a collaborative way: the ideas realised are the fruit of a dialogic process among the people involved. Each project is specific to the site where it is made and mixes research on the place with the creative process of exchange and knowledge. Formed as a collective based in Puglia, it imagined this land as a platform stretching out into the sea towards Greece and the Balkans."),
+ lead='<strong>ilMotorediRicerca</strong> is a collective founded in 2008 by <a class="gold" target="_blank" href="http://www.nicoangiuli.com/"><strong>Nico Angiuli</strong></a>, <strong>Roberto dell’Orco</strong>, <a class="gold" href="http://atelierquartino.com/" target="_blank"><strong>Matteo Fraterno</strong></a> and <strong>Michele Loiacono</strong>. Like a search engine, but physical rather than virtual, it has explored marginal territories of the contemporary, reinterpreting collective memories and imaginaries.',
+ p1="Each project starts from a specific place and from a dialogue with the people involved: the ideas realised are the fruit of this exchange. The collective formed in Puglia and imagined this land as a platform stretching out into the sea towards Greece and the Balkans.",
+ p2="This site is the archive of the projects carried out by the group, from 2008 to 2014."),
 }
 def home_article(lang):
     T = HOME_TXT[lang]; base = "" if lang=="it" else "/en"

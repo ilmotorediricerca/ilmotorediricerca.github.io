@@ -12,6 +12,7 @@
 [adelfia-fratelli] 'Volos-Milies, Grece,' -> 'Volos-Milies, Grecia,'
 [adelfia-fratelli] 'Gli artist in diversi ruoli' -> 'Gli artisti in diversi ruoli'
 [albania1e1000] 'All’apperenza' -> 'All’apparenza'
+[albania1e1000] 'sugli albanesi , luoghi' -> 'sugli albanesi, luoghi'
 [otnarat] 'Gemania' -> 'Germania'
 [otnarat] 'moduli d’acciao' -> 'moduli d’acciaio'
 [otnarat] 'laborario d’arte urbana Staker/ON' -> 'laboratorio d’arte urbana Stalker/ON'

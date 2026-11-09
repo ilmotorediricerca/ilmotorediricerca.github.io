@@ -17,3 +17,16 @@
 @media (min-width: 48em) { .content.home-wide { width: 74%; max-width: 62em; } }
 @media (max-width: 600px) { .cards { grid-template-columns: repeat(2, 1fr); gap: 1.2em .8em; } .card-text { display: none; } .lead { font-size: 1.1em; } }
 .legende-galerie { font-size: .8em; opacity: .7; margin: -1em 0 1.5em; }
+
+/* griglia foto nelle pagine dei progetti */
+article.page .photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: .9em; margin: 2em 0 1.2em; }
+article.page .photo-grid a { display: block; overflow: hidden; border-radius: 6px; aspect-ratio: 4 / 3; background: #eee; }
+article.page .photo-grid img { width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; margin: 0; border-radius: 0; transition: transform .5s ease; }
+article.page .photo-grid a:hover img, article.page .photo-grid a:focus-visible img { transform: scale(1.06); }
+@media (max-width: 600px) { article.page .photo-grid { grid-template-columns: repeat(2, 1fr); gap: .6em; } }
+
+/* pagine progetto: colonna larga, ma testo di lunghezza di riga leggibile */
+.content.home-wide article.page > p:not(.photo-grid):not(.lead):not(.legende-galerie),
+.content.home-wide article.page > .page-title,
+.content.home-wide article.page > h2 { max-width: 42em; }
+.content.home-wide article.page > iframe { max-width: 100%; }
